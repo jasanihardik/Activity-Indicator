@@ -10,11 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func startButton(_ sender: UIButton) {
+        
+        activityIndicator.startAnimating()
+        
+    }
+    
+    @IBAction func stopButton(_ sender: UIButton) {
+        
+       activityIndicator.stopAnimating()
+        
+    }
+    
 }
 
